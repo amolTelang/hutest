@@ -31,6 +31,6 @@ jobs:
         env: 
          GIT_TAG: v0.1.0
         run: 
-         docker push gcr.io/${{ secrets.GCLOUD_PROJECT }}/${{ ecrets.GCLOUD_APP_NAME }}
+         docker push gcr.io/${{ secrets.GCLOUD_PROJECT }}/${{ secrets.GCLOUD_APP_NAME }}
          
  
