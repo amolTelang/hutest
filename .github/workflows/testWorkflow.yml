@@ -35,7 +35,7 @@ jobs:
           docker push asia.gcr.io/hutest-345118/hashtest:latest
       
       - name : Deploy on gcp
-        run : gcloud run deploy hashtest --quiet --image asia.gcr.io/hutest-345118/hashtest:latest --platform managed --region asia-south1-b
+        run : gcloud run deploy hashtest --quiet --image asia.gcr.io/hutest-345118/hashtest:latest --platform managed --region asia-south1
           
 
          

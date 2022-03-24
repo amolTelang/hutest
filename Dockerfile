@@ -1,3 +1,5 @@
-FROM nginx:1.17-alpine
+FROM nginx
 
-COPY ./index.html /usr/share/nginx/html/
+COPY html /usr/share/nginx/html
+
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
