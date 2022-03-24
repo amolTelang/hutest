@@ -1,15 +1,16 @@
 name: Hello world workflow
-on:push
+
+on: push
 
 jobs:
-  Hello World actions:
-    runs-on:ubuntu-latest
+  Hello-World-actions:
+    runs-on: ubuntu-latest
     steps:
-      -run:echo "Hello world"
-      -run:echo "the name of the branch is ${{github.ref}} and your repository is ${{github.repository}}
+      - run: echo "Hello world"
+      - run: echo "the name of the branch is ${{github.ref}} and your repository is ${{github.repository}}
       
-      -name:Check out repo code
-       uses:actions/checkout@v2
+      - name: Check out repo code
+        uses: actions/checkout@v2
       
-      -run:echo"The ${{github.repository}} "
+      - run: echo"The ${{github.repository}} "
  
