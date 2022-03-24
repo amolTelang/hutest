@@ -22,7 +22,7 @@ jobs:
          export_default_credentials: true
       
       - name: Build docker image
-        run: docker build . --tag gcr.io/${{ secrets.GCLOUD_PROJECT }}/${{ ecrets.GCLOUD_APP_NAME }}
+        run: docker build . --tag gcr.io/${{ secrets.GCLOUD_PROJECT }}/${{ secrets.GCLOUD_APP_NAME }}
       
       - name: Configure docker client
         run: gcloud auth configure-docker --quiet
