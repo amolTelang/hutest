@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-  Hello-World-actions:
+  build-and-deploy:
     name: Build and push
     runs-on: ubuntu-latest
     env:
