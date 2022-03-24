@@ -34,8 +34,8 @@ jobs:
           # docker tag builtimage:v1 asia.gcr.io/hutest-345118/hashtest:latest
           docker push asia.gcr.io/hutest-345118/hashtest:latest
       
-      - name : Deploy on gcp
-        run : gcloud run deploy hashtest --quiet --image asia.gcr.io/hutest-345118/hashtest:latest --platform managed --region asia-south1
+      # - name : Deploy on gcp
+      #   run : gcloud run deploy hashtest --quiet --image asia.gcr.io/hutest-345118/hashtest:latest --platform managed --region asia-south1
           
 
          
