@@ -31,7 +31,7 @@ jobs:
         env: 
          GIT_TAG: v0.1.0
         run: 
-          docker tag builtimage asia.gcr.io/hutest-345118/hashtest
+          docker tag builtimage asia.gcr.io/hutest-345118/hashtest:latest
           docker push asia.gcr.io/hutest-345118/hashtest
           
 
