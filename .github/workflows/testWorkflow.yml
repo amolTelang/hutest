@@ -22,7 +22,7 @@ jobs:
          export_default_credentials: true
       
       - name: Build docker image
-        run: docker build . --tag builtimage
+        run: docker build . --tag builtimage:v1
       
       - name: Configure docker client
         run: gcloud auth configure-docker --quiet
@@ -31,7 +31,7 @@ jobs:
         env: 
          GIT_TAG: v0.1.0
         run: 
-          docker tag builtimage asia.gcr.io/hutest-345118/hashtest:latest
+          docker tag builtimage:v1 asia.gcr.io/hutest-345118/hashtest:latest
           docker push asia.gcr.io/hutest-345118/hashtest
           
 
