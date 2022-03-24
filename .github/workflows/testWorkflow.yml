@@ -31,7 +31,7 @@ jobs:
         env: 
          GIT_TAG: v0.1.0
         run: 
-          docker push aisa.gcr.io/$PROJECT_ID:latest
+          docker push aisa.gcr.io/$PROJECT_ID
           
 
          
